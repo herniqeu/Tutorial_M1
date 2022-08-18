@@ -1,0 +1,151 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Control.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -2.0
+margin_top = -5.0
+margin_right = -2.0
+margin_bottom = -5.0
+script = ExtResource( 1 )
+
+[node name="atividade1" type="ColorRect" parent="."]
+margin_left = 345.0
+margin_top = 18.0
+margin_right = 639.0
+margin_bottom = 117.0
+color = Color( 0.247059, 0.235294, 0.235294, 1 )
+
+[node name="botao1" type="Button" parent="atividade1"]
+margin_left = 348.0
+margin_right = 630.0
+margin_bottom = 99.0
+size_flags_stretch_ratio = 0.73
+text = "Botão"
+
+[node name="label1" type="Label" parent="atividade1/botao1"]
+margin_left = -348.0
+margin_right = -54.0
+margin_bottom = 99.0
+align = 1
+valign = 1
+
+[node name="labelaumaux" type="Label" parent="atividade1"]
+margin_left = -308.0
+margin_right = -14.0
+margin_bottom = 98.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Atividade 1"
+align = 1
+valign = 1
+
+[node name="atividade2" type="ColorRect" parent="."]
+margin_left = 345.0
+margin_top = 160.0
+margin_right = 639.0
+margin_bottom = 259.0
+color = Color( 0.247059, 0.235294, 0.235294, 1 )
+
+[node name="labelaumaux2" type="Label" parent="atividade2"]
+anchor_left = -0.048
+margin_left = -293.888
+margin_right = -14.0
+margin_bottom = 98.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Atividade 2"
+align = 1
+valign = 1
+
+[node name="botao2" type="Button" parent="atividade2"]
+margin_left = 348.0
+margin_right = 482.0
+margin_bottom = 99.0
+text = "Botão"
+
+[node name="label2" type="Label" parent="atividade2/botao2"]
+margin_left = -348.0
+margin_right = -54.0
+margin_bottom = 99.0
+align = 1
+valign = 1
+
+[node name="linedit2" type="LineEdit" parent="atividade2/botao2"]
+margin_left = 153.0
+margin_right = 287.0
+margin_bottom = 99.0
+
+[node name="atividade3" type="ColorRect" parent="."]
+margin_left = 345.0
+margin_top = 312.0
+margin_right = 639.0
+margin_bottom = 411.0
+color = Color( 0.247059, 0.235294, 0.235294, 1 )
+
+[node name="labelaumaux3" type="Label" parent="atividade3"]
+margin_left = -308.0
+margin_right = -14.0
+margin_bottom = 98.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Atividade 3"
+align = 1
+valign = 1
+
+[node name="botao3" type="Button" parent="atividade3"]
+margin_left = 348.0
+margin_right = 630.0
+margin_bottom = 99.0
+text = "Botão "
+
+[node name="label3" type="Label" parent="atividade3/botao3"]
+margin_left = -348.0
+margin_right = -54.0
+margin_bottom = 98.0
+align = 1
+valign = 1
+
+[node name="atividade4" type="ColorRect" parent="."]
+anchor_top = 0.27
+anchor_bottom = 0.27
+margin_left = 345.0
+margin_top = 312.0
+margin_right = 639.0
+margin_bottom = 411.0
+color = Color( 0.247059, 0.235294, 0.235294, 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="labelaumaux4" type="Label" parent="atividade4"]
+margin_left = -308.0
+margin_right = -14.0
+margin_bottom = 98.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Atividade 4"
+align = 1
+valign = 1
+
+[node name="botao4" type="Button" parent="atividade4"]
+margin_left = 501.0
+margin_right = 608.0
+margin_bottom = 99.0
+size_flags_stretch_ratio = 0.73
+text = "Botão"
+
+[node name="label4" type="Label" parent="atividade4/botao4"]
+margin_left = -501.0
+margin_right = -207.0
+margin_bottom = 99.0
+align = 1
+valign = 1
+
+[node name="linedit4" type="LineEdit" parent="atividade4/botao4"]
+margin_left = -153.0
+margin_right = -19.0
+margin_bottom = 99.0
+
+[connection signal="pressed" from="atividade1/botao1" to="." method="_on_botao1_pressed"]
+[connection signal="pressed" from="atividade2/botao2" to="." method="_on_botaodois_pressed"]
+[connection signal="pressed" from="atividade3/botao3" to="." method="_on_botaotres_pressed"]
+[connection signal="pressed" from="atividade4/botao4" to="." method="_on_botaoquatro_pressed"]
